@@ -6,6 +6,7 @@ import Navbar from "./components/common/Navbar";
 import Blog from "./components/Blog";
 import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
+import Footer from "./components/common/Footer";
 function App() {
 	return (
 		<div>
@@ -22,6 +23,7 @@ function App() {
 					</Switch>
 				</div>
 			</main>
+			<Footer />
 		</div>
 	);
 }
