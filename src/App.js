@@ -9,15 +9,19 @@ import Home from "./components/Home";
 function App() {
 	return (
 		<div>
-			<Navbar />
-			<div className="content">
-				<Switch>
-					<Route path="/shop" component={Shop} />
-					<Route path="/blog" component={Blog} />
-					<Route path="/about-us" component={AboutUs} />
-					<Route path="/" exact component={Home} />
-				</Switch>
-			</div>
+			<header>
+				<Navbar />
+			</header>
+			<main role="main">
+				<div className="content">
+					<Switch>
+						<Route path="/shop" component={Shop} />
+						<Route path="/blog" component={Blog} />
+						<Route path="/about-us" component={AboutUs} />
+						<Route path="/" exact component={Home} />
+					</Switch>
+				</div>
+			</main>
 		</div>
 	);
 }
